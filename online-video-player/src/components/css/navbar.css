@@ -1,0 +1,110 @@
+.navleft{
+    padding-right: 20px;
+}
+.menu{
+    margin-left: 20px;
+}
+.youtube{
+    width: 50px;
+    margin-left: 20px;
+}
+.navright{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-left: 450px;
+
+}
+li{
+    float: right;
+    margin-left: 40px;
+}
+.addcontent{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    margin-right: 60px;
+    font-size: 15px;
+}
+.addcontent img{
+    margin-right: 8px;
+}
+.navmiddle{
+  position: relative;
+  left: 300px;
+  
+}
+.navmiddle input{
+    height: 35px;
+    width: 530px;
+    border-radius: 30px 0px 0px 30px;
+    padding-left: 20px;
+    border: 1px  solid grey;
+    box-shadow: inset 0 1px 2px #eee;
+    border-right:none ;
+    display: flex;
+    flex: 1;
+    font-size: 16px;
+    outline-color: navy;
+}
+.navmiddle button{
+    width: 50px;
+    border: 1px solid grey;
+    background-color: #f8f8f8;
+    height: 35px;
+    padding-right: 20px;
+    border-radius: 0px 30px 30px 0px;
+    cursor: pointer;
+}
+.navmiddle button img{
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .navright {
+        margin-left: 0; /* Remove left margin */
+        justify-content: flex-end; /* Align items to the right */
+    }
+
+    .navmiddle {
+        left: 0; /* Reset left position */
+        width: 50%; /* Full width */
+        padding: 0 10px; /* Add some padding */
+    }
+
+    .navmiddle input {
+        width: calc(100% - 60px); /* Adjust width to fit */
+    }
+
+    .navmiddle button {
+        width: 50px; /* Keep button width */
+    }
+
+    li {
+        float: right; /* Stack items vertically */
+        margin-left: 20px; /* Adjust margin */
+    }
+
+    .addcontent {
+        display: none; /* Adjust margin for smaller screens */
+    }
+
+    .youtube {
+        width: 80px; /* Adjust logo size */
+    }
+
+    .navbar {
+        height: 50px; /* Reduce navbar height */
+    }
+    .menu{
+        display: none;
+    }
+}

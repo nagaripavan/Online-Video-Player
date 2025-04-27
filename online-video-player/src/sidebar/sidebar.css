@@ -1,0 +1,43 @@
+.sidebar{
+    position: fixed;
+    padding-left: 2%;
+}
+.side-link img{
+    width: 20px;
+    margin-right: 20px;
+    margin-left: 1px;
+}
+.side-link{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.subscribed-list h3{
+    margin: 25px 0px;
+    font-weight: lighter;
+}
+.subscribed-list img{
+    border-radius: 50%;
+}
+.small-sidebar p{
+    display: none;
+}
+.small-sidebar h3{
+    display: none;
+}
+.small-sidebar .hr{
+    margin-bottom: 30px;
+}
+.side-link.active img{
+    padding-bottom: 2px;
+    border-bottom: 3px solid red;
+}
+@media (max-width:900px) {
+    .sidebar{
+        display: none;
+    }
+    
+}

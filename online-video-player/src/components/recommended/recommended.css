@@ -1,0 +1,41 @@
+.recommended-section img{
+        width: 95%;
+        border-radius: 10px;
+
+}
+.recommended-section{
+    flex-basis: 25%;
+    margin-top: 6%;
+    margin-left: 2%;
+}
+.recommended-video{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+}
+.video-details h3{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.video-details p{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+@media (max-width:900px) {
+    .recommended-section{
+        flex-basis: 100%;
+        margin-left: 6%;
+        margin-right: 0;
+    }
+    .recommended-video{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .recommended-video h3{
+        margin-top: 10px;
+    }
+    .video-details p{
+        margin-bottom: 0;
+    }
+    
+}
