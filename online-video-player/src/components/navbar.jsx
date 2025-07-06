@@ -12,7 +12,7 @@ const Navbar=({setSidebar})=>{
                  <div className="navleft flex-dir">
                     <img src={list} alt="menu" className='menu' onClick={()=>setSidebar(prev=>prev===false?true:false)}/>
                     <Link to={`/`}><img src={playicn} alt="youtube" className='youtube' /></Link>
-                    <p>Video Mate</p>
+                    <Link to={`/`}><p>Video Mate</p></Link>
                  </div>
                  <div className="navmiddle flex-dir">
                     <input type="text" placeholder="Search"  />
